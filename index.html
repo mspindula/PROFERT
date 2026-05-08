@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Produção Fertilizante
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>
+        Produção Fertilizante
+    </h1>
+
+    <form id="formulario">
+
+        <label>Data</label>
+
+        <input
+        type="date"
+        id="data"
+        required>
+
+
+
+        <label>Produto</label>
+
+        <select id="produto">
+
+            <option>
+                URÉIA
+            </option>
+
+            <option>
+                KCL
+            </option>
+
+            <option>
+                SAMO G
+            </option>
+
+            <option>
+                MAP CLARO
+            </option>
+
+        </select>
+
+
+
+        <label>HPD</label>
+
+        <input
+        type="number"
+        id="hpd"
+        >
+
+
+
+        <label>HFE</label>
+
+        <input
+        type="number"
+        id="hfe"
+        >
+
+
+
+        <label>Total Vagões</label>
+
+        <input
+        type="number"
+        id="totalVagoes"
+        readonly>
+
+
+
+        <label>Peso Líquido</label>
+
+        <input
+        type="number"
+        step="0.01"
+        id="peso"
+        required>
+
+
+
+        <label>Peso Médio</label>
+
+        <input
+        type="number"
+        step="0.01"
+        id="pesoMedio"
+        readonly>
+
+
+
+        <button type="submit">
+
+            Enviar
+
+        </button>
+
+    </form>
+
+
+
+    <div id="mensagem"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
