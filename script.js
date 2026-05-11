@@ -37,8 +37,10 @@ function calcular() {
     if(total > 0){
 
         pesoMedio.value =
-        (pesoLiquido / total)
-        .toFixed(2);
+Number(
+(pesoLiquido / total)
+.toFixed(2)
+);
 
     } else {
 
@@ -103,15 +105,20 @@ parseInt(partes[2]);
     produto:
     document.getElementById("produto").value,
 
-    hpd: hpd.value,
+    hpd:
+parseFloat(hpd.value) || 0,
 
-    hfe: hfe.value,
+hfe:
+parseFloat(hfe.value) || 0,
 
-    totalVagoes: totalVagoes.value,
+totalVagoes:
+parseFloat(totalVagoes.value) || 0,
 
-    peso: peso.value,
+peso:
+parseFloat(peso.value) || 0,
 
-    pesoMedio: pesoMedio.value
+    pesoMedio:
+parseFloat(pesoMedio.value)
 
 };
 
