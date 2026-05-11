@@ -96,7 +96,7 @@ parseInt(partes[2]);
 
 
 
-  const dados = {
+const dados = {
 
     data: dataSelecionada,
 
@@ -106,19 +106,19 @@ parseInt(partes[2]);
     document.getElementById("produto").value,
 
     hpd:
-parseFloat(hpd.value) || 0,
+    parseFloat(hpd.value) || 0,
 
-hfe:
-parseFloat(hfe.value) || 0,
+    hfe:
+    parseFloat(hfe.value) || 0,
 
-totalVagoes:
-parseFloat(totalVagoes.value) || 0,
+    totalVagoes:
+    parseFloat(totalVagoes.value) || 0,
 
-peso:
-parseFloat(peso.value) || 0,
+    peso:
+    parseFloat(peso.value) || 0,
 
     pesoMedio:
-parseFloat(pesoMedio.value)
+    parseFloat(pesoMedio.value) || 0
 
 };
 
